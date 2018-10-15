@@ -1,3 +1,35 @@
 * {
-  background-color: pink;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+  color: #231942;
 }
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1517867065801-e20f409696b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7fe13c73578cd27e025e09b16ccb6ea&auto=format&fit=crop&w=1951&q=80);
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Charmonman', cursive;
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  border: 5px rosybrown;
+  border-style: groove;
+  background-color: #f4dbd8;
+  border-radius: 50%;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+
+/* colours
+blue: #231942
+white: #FFFCF2
+rose:  #BA8F8F
+pale pink: #F4DBD8
+grey: #BEBBBB */

@@ -1,7 +1,7 @@
 console.log('working');
 
 window.onload = function() {
-  const mantras = ['Happy', 'So happy', 'Very happy'];
+  const mantras = ['Thank you for being my Mummy', 'Thank you for always helping me with life', 'Thank you for my very nice new gilet'];
 
   const mantraCount = mantras.length;
 
