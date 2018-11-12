@@ -5,13 +5,16 @@ window.onload = function() {
 
   const mantraCount = mantras.length;
 
-  // generate a random number
-  const randomNumber = (Math.ceil(Math.random()*mantraCount)-1);
+  const randomNumber = () => {
+    const generatedNumber = (Math.ceil(Math.random()*mantraCount)-1);
+    const mantraToDisplay = mantras[generatedNumber];
+    document.getElementById('message').innerHTML = mantraToDisplay;
+  };
 
-  // use the number to pick a mantra
-  const generatedMantra = mantras[randomNumber];
+  randomNumber();
 
-  // set the mantra as the HTML
-  document.getElementById('message').innerHTML = generatedMantra;
+  setInterval(function(){
+    randomNumber();
+  }, 5000);
 
 };
