@@ -13,7 +13,6 @@ body {
 
 h1 {
   font-family: 'Charmonman', cursive;
-  margin-top: 20px;
 }
 
 h2 {
@@ -22,9 +21,25 @@ h2 {
   border-style: groove;
   background-color: #f4dbd8;
   border-radius: 50%;
-  margin-top: 50px;
+  margin: 20px 0px;
   padding: 50px;
-  min-height: 100px;
+  min-height: 150px;
+}
+
+button {
+  background-color: #231942;
+  color: #FFFCF2;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10%;
+  border: solid 1px #231942;
+}
+
+h3 {
+  font-family: 'Charmonman', cursive;
+  margin: 10px;
+  font-size: 24px;
 }
 
 

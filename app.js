@@ -1,7 +1,12 @@
 console.log('working');
 
 window.onload = function() {
-  const mantras = [
+
+  document.getElementById('person').innerHTML = 'I love you xxx';
+
+  document.getElementById('message').innerHTML = 'You are the BEST!';
+
+  const mantrasMum = [
     'You are kind',
     'You are an amazing cook',
     'Your garden is beautiful',
@@ -16,30 +21,67 @@ window.onload = function() {
     'You are great at inspiring me',
     'You are a really great motivator',
     'You give good advice',
-    'You are a fun mum!'];
+    'You are a fun mum!'
+  ];
 
-  const mantraCount = mantras.length;
+  const mantrasDad = [
+    'You are very wise',
+    'You are so caring',
+    'You are very clever',
+    'You always help me with things',
+    'You have great Dad jokes',
+    'You lay the best RBs!',
+    'You always try to fix things',
+    'You give good advice',
+    'You are the best dog Master!',
+    'You have top bants',
+    'You have great style',
+    'You are great at fun presents',
+    'You always ensure that the fun meter stays in the green!',
+    'You are the BEST at halal BBQs!',
+    'You are great for interesting chats'
+  ];
 
-  const randomNumber = () => {
-    const generatedNumber = (Math.ceil(Math.random()*mantraCount)-1);
-    const mantraToDisplay = mantras[generatedNumber];
-    document.getElementById('message').innerHTML = mantraToDisplay;
+  const mantraCountMum = mantrasMum.length;
+  const mantraCountDad = mantrasDad.length;
+
+  const randomNumberMum = () => {
+    const generatedNumberMum = (Math.ceil(Math.random()*mantraCountMum)-1);
+    const mantraToDisplayMum = mantrasMum[generatedNumberMum];
+    document.getElementById('message').innerHTML = mantraToDisplayMum;
   };
 
-  randomNumber();
+  const randomNumberDad = () => {
+    const generatedNumberDad = (Math.ceil(Math.random()*mantraCountDad)-1);
+    const mantraToDisplayDad = mantrasDad[generatedNumberDad];
+    document.getElementById('message').innerHTML = mantraToDisplayDad;
+  };
 
-  setInterval(function(){
-    randomNumber();
-  }, 5000);
+  const setMummy = () => {
+    document.getElementById('person').innerHTML = 'Mummy';
+  };
+
+  const setDaddy = () => {
+    document.getElementById('person').innerHTML = 'Daddy';
+  };
 
   document.getElementById('mumButton').addEventListener('click', function(){
-    document.getElementById('person').innerHTML = 'Mummy';
+    clearInterval();
+    setMummy();
+    setInterval(randomNumberMum, 3000);
   });
 
   document.getElementById('dadButton').addEventListener('click', function(){
-    document.getElementById('person').innerHTML = 'Daddy';
+    clearInterval();
+    setDaddy();
+    setInterval(randomNumberDad, 3000);
   });
 
+  const parents = () => {
+    document.getElementById('parents').innerHTML = 'As people you are amazing, but as parents you are the best!';
+  };
+
+  setInterval(parents, 30000);
 
 
-    };
+};
